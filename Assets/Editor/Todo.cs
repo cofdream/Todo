@@ -10,10 +10,9 @@ public enum TodoStateType : byte
     Done,
 }
 
-[System.Serializable]
-public class Todo /*: UnityEngine.Object*/
+[Serializable]
+public class Todo
 {
     public TodoStateType StateType;
-    public string Content;
-    public DateTime dateTime;
+    [TextArea] public string Content;
 }
